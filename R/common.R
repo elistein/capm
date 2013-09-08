@@ -89,10 +89,10 @@ logit <- function(p) {
 
 ## Source in everything else
 
-modules <- c("nbd","sbg","msbg")
+#modules <- c("nbd","sbg","msbg")
 
-file.sources <- list.files(modules, 
-                          pattern="*.R$", full.names=TRUE, 
-                          ignore.case=TRUE)
+#file.sources <- list.files(modules, 
+#                          pattern="*.R$", full.names=TRUE, 
+#                          ignore.case=TRUE)
 
-. <- sapply(file.sources,source,.GlobalEnv)
+# . <- sapply(file.sources,source,.GlobalEnv)
