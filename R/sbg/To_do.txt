@@ -1,8 +1,0 @@
-To fix:
-
-1. Check CLV -- why is it acting funny?
-2. Fix example accordingly
-
-To implement:
-Covariates?
-Fix? ie AIC, BIC, GOF
