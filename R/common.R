@@ -89,7 +89,7 @@ logit <- function(p) {
 
 ## Source in everything else
 
-modules <- c("nbd","sbg_single_cohort","sbg_mixed_cohorts")
+modules <- c("nbd","sbg","msbg")
 
 file.sources <- list.files(modules, 
                           pattern="*.R$", full.names=TRUE, 
