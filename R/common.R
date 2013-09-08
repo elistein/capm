@@ -1,6 +1,6 @@
 ## Functions used across the package
 ## Created by ES (eli.manfred.stein@gmail.com) on 6.28.2013
-## Last edited by ES (eli.manfred.stein@gmail.com) on 7.23.2013
+## Last edited by ES (eli.manfred.stein@gmail.com) on 9.7.2013
 
 optim.error.handler <- function(e) {
 
@@ -86,3 +86,13 @@ logit <- function(p) {
   return(res)
   
 }
+
+## Source in everything else
+
+modules <- c("nbd","sbg_single_cohort","sbg_mixed_cohorts")
+
+file.sources <- list.files(modules, 
+                          pattern="*.R$", full.names=TRUE, 
+                          ignore.case=TRUE)
+
+. <- sapply(file.sources,source,.GlobalEnv)
