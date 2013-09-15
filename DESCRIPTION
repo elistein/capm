@@ -8,17 +8,6 @@ Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
 License: What license is it under?
 Collate:
-    '_sbg_ce.R'
-    '_sbg_clv.R'
-    '_sbg_fitted.R'
-    '_sbg_fitter.R'
-    '_sbg_incr_churn.R'
-    '_sbg_main.R'
-    '_sbg_plot.R'
-    '_sbg_predict.R'
-    '_sbg_ret_rate.R'
-    '_sbg_sim.R'
-    '_sbg_summary.R'
-    '_sbg_survivors.R'
     'capm-internal.R'
     'common.R'
+    'sbg_sim.R'
