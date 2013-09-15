@@ -2,9 +2,10 @@
 ## Created by ES (eli.manfred.stein@gmail.com) on 8.14.2013
 ## Last edited by ES (eli.manfred.stein@gmail.com) on 8.14.2013
 
+#' @title Simulation from a shifted Beta Geometric model.
 #' @name sbg.sim
 #'
-#' @author Eli Stein (eli.manfred.stein@gmail.com)
+#' @author Eli Stein (eli.manfred.stein@@gmail.com)
 #'
 #' @description Simulate from a shifted Beta Geometric model.
 #'
