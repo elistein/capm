@@ -2,6 +2,12 @@
 ## Created by ES (eli.manfred.stein@gmail.com) on 6.28.2013
 ## Last edited by ES (eli.manfred.stein@gmail.com) on 9.7.2013
 
+#' @importFrom base sqrt
+#' @importFrom base mean
+#' @importFrom base abs
+#' @importFrom base cat
+
+# @keyword internal
 optim.error.handler <- function(e) {
 
   ## Custom Error Handling for Optim
@@ -10,7 +16,8 @@ optim.error.handler <- function(e) {
   
   else cat("Error: Could not numerically optimize the likelihood function. Consider trying different starting values, using a different optimization method, or identifying problematic observations. Message from optim:",as.character(e[[1]]),"\n")  
 }
-  
+
+# @keyword internal
 rmse <- function(expected,observed) {
 
   ## Root mean squared error
@@ -20,6 +27,7 @@ rmse <- function(expected,observed) {
   
 }
 
+# @keyword internal
 mae <- function(expected,observed) {
 
   ## Mean absolute error
@@ -29,6 +37,7 @@ mae <- function(expected,observed) {
   
 }
 
+# @keyword internal
 mape <- function(expected,observed) {
 
   ## Mean absolute percent error
@@ -38,6 +47,7 @@ mape <- function(expected,observed) {
   
 }
 
+# @keyword internal
 fit.stats <- function(expected,observed,
                       type=c('all','rmse','mae','mape')) {
 
@@ -66,6 +76,7 @@ fit.stats <- function(expected,observed,
   
 }
 
+# @keyword internal
 inv.logit <- function(p) {
 
   ## logistic function
@@ -78,6 +89,7 @@ inv.logit <- function(p) {
   
 }
 
+# @keyword internal
 logit <- function(p) {
 
   ## logit function
@@ -86,13 +98,3 @@ logit <- function(p) {
   return(res)
   
 }
-
-## Source in everything else
-
-#modules <- c("nbd","sbg","msbg")
-
-#file.sources <- list.files(modules, 
-#                          pattern="*.R$", full.names=TRUE, 
-#                          ignore.case=TRUE)
-
-# . <- sapply(file.sources,source,.GlobalEnv)

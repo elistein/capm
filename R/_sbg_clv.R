@@ -27,9 +27,13 @@ clv.sbg <- function(sbg.object,
 
   ## Translate spend.object into average spend
   
-  if(is.null(spend.object)) {
+  if(missing(spend.object)) {
     spend.avg <- 1
     warning("Argument 'spend.object' is not provided. Assuming $1 average purchase transactions and returning DERT. \n")
+  } else {
+
+    spend.avg <- mean(spend.object)
+    
   }
 
   if(is.numeric(spend.object)) spend.avg <- mean(spend.object)
@@ -69,6 +73,7 @@ clv.sbg <- function(sbg.object,
                                            b+ end.period.num + 1,
                                            a + b + end.period.num + 1,
                                            disc.ratio)
+  posteriorafter <- posteriorafter*spend.avg
 
   res <- switch(typewhen,
                 priorbefore=priorbefore,
