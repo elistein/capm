@@ -1,5 +1,1 @@
 export(sbg.sim)
-importFrom(base,abs)
-importFrom(base,cat)
-importFrom(base,mean)
-importFrom(base,sqrt)

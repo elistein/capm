@@ -2,11 +2,6 @@
 ## Created by ES (eli.manfred.stein@gmail.com) on 6.28.2013
 ## Last edited by ES (eli.manfred.stein@gmail.com) on 9.7.2013
 
-#' @importFrom base sqrt
-#' @importFrom base mean
-#' @importFrom base abs
-#' @importFrom base cat
-
 # @keyword internal
 optim.error.handler <- function(e) {
 
