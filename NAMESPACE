@@ -1,1 +1,3 @@
+S3method(fitted,sbg)
+export(sbg)
 export(sbg.sim)

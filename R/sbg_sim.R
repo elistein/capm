@@ -12,7 +12,7 @@
 #' @param a The 'alpha' parameter of the shifted Beta Geometric model.
 #' @param b The 'beta' parameter of the shifted Beta Geometric model.
 #' @param obs.per.end The index of the final period in which customers are observed.
-#' @param n The number of customers at the start of the first period. (Defaults to 1000.)
+#' @param n The number of customers at the start of the first period.
 #'
 #' @return Vector indicating number of surviving customers in each period.
 #'
@@ -20,7 +20,8 @@
 #'
 #' @examples
 #' simul.data <- sim.sbg(a=5,b=10,obs.per.end=7)
-
+#'
+#' @seealso \code{\link{sbg}}
 
 sbg.sim <- function(a,b,obs.per.end,n=1000) {
 

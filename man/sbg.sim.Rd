@@ -15,7 +15,7 @@
   customers are observed.}
 
   \item{n}{The number of customers at the start of the
-  first period. (Defaults to 1000.)}
+  first period.}
 }
 \value{
   Vector indicating number of surviving customers in each
@@ -29,5 +29,8 @@ simul.data <- sim.sbg(a=5,b=10,obs.per.end=7)
 }
 \author{
   Eli Stein (eli.manfred.stein@gmail.com)
+}
+\seealso{
+  \code{\link{sbg}}
 }
 

@@ -3,12 +3,10 @@
 \alias{capm}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
+Customer Analytics Using Probability Models
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+Fit latent variable models to understand who your customers are and what they will do next. Contains maximum likelihood estimation routines for a variety of models, as well as S3 methods to explore model fit and produce forecasts. 
 }
 \details{
 \tabular{ll}{
@@ -21,7 +19,7 @@ License: \tab What license is it under?\cr
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-Who wrote it
+Eli Stein (eli.manfred.stein@gmail.com)
 
 Maintainer: Who to complain to <yourfault@somewhere.net>
 ~~ The author and/or maintainer of the package ~~
